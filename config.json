@@ -3,63 +3,110 @@
     "job": "Desenvolvedora Front-End",
     "github": "luizaadev",
     "playlists": {
-        "jogos": [
+        "Games": [
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-                "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
+                "title": "THE LAST OF US 2 Official Trailer (PS4)",
+                "url": "https://www.youtube.com/watch?v=qPNiIeKMHyg",
+                "thumb": "https://img.youtube.com/vi/qPNiIeKMHyg/hqdefault.jpg"
             },
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
-                "thumb": "https://img.youtube.com/vi/O8jtAyPuhNg/hqdefault.jpg"
+                "title": "Horizon Forbidden West - Announcement Trailer | PS5",
+                "url": "https://www.youtube.com/watch?v=Lq594XmpPBg&t=14s",
+                "thumb": "https://img.youtube.com/vi/Lq594XmpPBg/hqdefault.jpg"
             },
             {
-                "title": "Gas Station Simulator - 8 dias sem dormir!",
-                "url": "https://www.youtube.com/watch?v=R1d0DyRDG_Q",
-                "thumb": "https://img.youtube.com/vi/R1d0DyRDG_Q/hqdefault.jpg"
+                "title": "Hogwarts Legacy - Official Reveal Trailer | PS5",
+                "url": "https://www.youtube.com/watch?v=1O6Qstncpnc",
+                "thumb": "https://img.youtube.com/vi/1O6Qstncpnc/hqdefault.jpg"
             },
             {
-                "title": "Gartic Phone - Não assista a esse NerdPlayer!",
-                "url": "https://www.youtube.com/watch?v=0oJQUs5oRiM",
-                "thumb": "https://img.youtube.com/vi/0oJQUs5oRiM/hqdefault.jpg"
+                "title": "God Of War Ragnarok - PlayStation Showcase 2021 Reveal Trailer | PS5",
+                "url": "https://www.youtube.com/watch?v=EE-4GvjKcfs",
+                "thumb": "https://img.youtube.com/vi/EE-4GvjKcfs/hqdefault.jpg"
             },
             {
-                "title": "Netdecking Estraga o Magic?",
-                "url": "https://www.youtube.com/watch?v=dXihyhYEsEc",
-                "thumb": "https://img.youtube.com/vi/dXihyhYEsEc/hqdefault.jpg"
+                "title": "Shadow Of The Tomb Raider - Official Trailer",
+                "url": "https://www.youtube.com/watch?v=XYtyeqVQnRI",
+                "thumb": "https://img.youtube.com/vi/XYtyeqVQnRI/hqdefault.jpg"
             },
             {
-                "title": "Cities: Skylines - EPCOTAB, o futuro de Saint Laurrent",
-                "url": "https://www.youtube.com/watch?v=zybKHMgLCWU",
-                "thumb": "https://img.youtube.com/vi/zybKHMgLCWU/hqdefault.jpg"
+                "title": "Uncharted 4: A Thief's End E3 2014 Trailer (PS4)",
+                "url": "https://www.youtube.com/watch?v=y1Rx-Bbht5E",
+                "thumb": "https://img.youtube.com/vi/y1Rx-Bbht5E/hqdefault.jpg"
             },
             {
-                "title": "We Were Here Together - Os Enigmas deste Mundo",
-                "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
-                "thumb": "https://img.youtube.com/vi/UKgQsrHUG40/hqdefault.jpg"
+                "title": "Marvel’s Spider-Man - PS4 Trailer | E3 2017",
+                "url": "https://www.youtube.com/watch?v=8pR0o2fGyHg",
+                "thumb": "https://img.youtube.com/vi/8pR0o2fGyHg/hqdefault.jpg"
             },
             {
-                "title": "Microsoft Flight Simulator - Top Gun: Oceania - Missão RJ!",
-                "url": "https://www.youtube.com/watch?v=n3TneUb5c-w",
-                "thumb": "https://img.youtube.com/vi/n3TneUb5c-w/hqdefault.jpg"
+                "title": "Detroit: Become Human - E3 2016 Trailer | PS4",
+                "url": "https://www.youtube.com/watch?v=QD1pbWCJcKQ",
+                "thumb": "https://img.youtube.com/vi/QD1pbWCJcKQ/hqdefault.jpg"
             }
         ],
-        "front-end": [
+        "TV Shows": [
             {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
-                "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+                "title": "Stranger Things 4 | Official Trailer | Netflix",
+                "url": "https://www.youtube.com/watch?v=yQEondeGvKo&t=8s",
+                "thumb": "https://img.youtube.com/vi/yQEondeGvKo/hqdefault.jpg"
             },
             {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
-                "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
+                "title": "Breaking Bad Trailer (First Season)",
+                "url": "https://www.youtube.com/watch?v=HhesaQXLuRY",
+                "thumb": "https://img.youtube.com/vi/HhesaQXLuRY/hqdefault.jpg"
             },
             {
-                "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
-                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
-                "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
+                "title": "Anne With An E | Season 3 Official Trailer | Netflix",
+                "url": "https://www.youtube.com/watch?v=UjHdj-vhND4",
+                "thumb": "https://img.youtube.com/vi/UjHdj-vhND4/hqdefault.jpg"
+            },
+            {
+                "title": "The Walking Dead Trailer",
+                "url": "https://www.youtube.com/watch?v=R1v0uFms68U",
+                "thumb": "https://img.youtube.com/vi/R1v0uFms68U/hqdefault.jpg"
+            },
+            {
+                "title": "The Vampire Diaries Season 1 Trailer",
+                "url": "https://www.youtube.com/watch?v=BmVmhjjkN4E",
+                "thumb": "https://img.youtube.com/vi/BmVmhjjkN4E/hqdefault.jpg"
+            },
+            {
+                "title": "Mare of Easttown: Official Trailer | HBO",
+                "url": "https://www.youtube.com/watch?v=bm7RmpzCeyk",
+                "thumb": "https://img.youtube.com/vi/bm7RmpzCeyk/hqdefault.jpg"
+            },
+            {
+                "title": "Game of Thrones | Official Series Trailer (HBO)",
+                "url": "https://www.youtube.com/watch?v=KPLWWIOCOOQ",
+                "thumb": "https://img.youtube.com/vi/KPLWWIOCOOQ/hqdefault.jpg"
+            }
+        ],
+        "Front-End Roadmap": [
+            {
+                "title": "HTML Tutorial - How to Make a Super Simple Website",
+                "url": "https://www.youtube.com/watch?v=PlxWf493en4",
+                "thumb": "https://img.youtube.com/vi/PlxWf493en4/hqdefault.jpg"
+            },
+            {
+                "title": "CSS Tutorial - Zero to Hero (Complete Course)",
+                "url": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+                "thumb": "https://img.youtube.com/vi/1Rs2ND1ryYc/hqdefault.jpg"
+            },
+            {
+                "title": "HTML & CSS Full Course - Beginner to Pro (2022)",
+                "url": "https://www.youtube.com/watch?v=G3e-cpL7ofc",
+                "thumb": "https://img.youtube.com/vi/G3e-cpL7ofc/hqdefault.jpg"
+            },
+            {
+                "title": "Curso em Video - Javascript",
+                "url": "https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm",
+                "thumb": "https://img.youtube.com/vi/BXqUH86F-kA/hqdefault.jpg"
+            },
+            {
+                "title": "Curso de Git e Github COMPLETO 2021 [Iniciantes] + Desafios + Muita Prática",
+                "url": "https://www.youtube.com/watch?v=kB5e-gTAl_s",
+                "thumb": "https://img.youtube.com/vi/kB5e-gTAl_s/hqdefault.jpg"
             },
             {
                 "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
@@ -67,66 +114,14 @@
                 "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
             },
             {
-                "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
-                "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
-                "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
+                "title": "COMEÇANDO NO REACT.JS EM 2022",
+                "url": "https://www.youtube.com/watch?v=pDbcC-xSat4",
+                "thumb": "https://img.youtube.com/vi/pDbcC-xSat4/hqdefault.jpg"
             },
             {
-                "title": "Como Foi Programado um App Que Faz Mágica",
-                "url": "https://www.youtube.com/watch?v=I36seuWUe5s",
-                "thumb": "https://img.youtube.com/vi/I36seuWUe5s/hqdefault.jpg"
-            },
-            {
-                "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
-                "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
-                "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
-            },
-            {
-                "title": "5 Erros Históricos do CSS",
-                "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
-                "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
-            },
-            {
-                "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
-                "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
-                "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
-            }
-        ],
-        "back-end": [
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-                "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
-            },
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-                "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
-            },
-            {
-                "title": "O que é o Java? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
-                "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
-            },
-            {
-                "title": "O que é Machine Learning? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
-                "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
-            },
-            {
-                "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
-                "thumb": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
-            },
-            {
-                "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
-                "thumb": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg"
-            },
-            {
-                "title": "O que é o C#? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
-                "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
+                "title": "Como desenvolver boas práticas de programação?",
+                "url": "https://www.youtube.com/watch?v=GUanHEGlje4",
+                "thumb": "https://img.youtube.com/vi/GUanHEGlje4/hqdefault.jpg"
             }
         ]
     }
