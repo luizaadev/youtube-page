@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const CSSReset = createGlobalStyle`
+
   /* Reset */
   * {
     margin: 0;
@@ -9,7 +10,10 @@ export const CSSReset = createGlobalStyle`
   }
   body {
     font-family: sans-serif;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
   }
+
   /* NextJS */
   html {
     display: flex;
@@ -24,6 +28,7 @@ export const CSSReset = createGlobalStyle`
     display: flex;
     flex: 1;
   }
+  
   /* Globals */
   button,
   a {

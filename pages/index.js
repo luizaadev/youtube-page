@@ -1,26 +1,19 @@
 import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
-import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
-    const estilosDaHomePage = {
-        // backgroundColor: "red" 
-    };
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     return (
         <>
-            <CSSReset />
             <div style={{
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
-                // backgroundColor: "red",
             }}>
-                {/* Prop Drilling */}
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
                 <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
@@ -33,16 +26,9 @@ function HomePage() {
 
 export default HomePage
 
-// function Menu() {
-//     return (
-//         <div>
-//             Menu
-//         </div>
-//     )
-// }
-
 
 const StyledHeader = styled.div`
+    background-color: ${({ theme }) => theme.backgroundLevel1};
     img {
         width: 80px;
         height: 80px;
@@ -57,8 +43,8 @@ const StyledHeader = styled.div`
     }
 `;
 const StyledBanner = styled.div`
-    background-color: pink;
-    background-image: url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
+    background-color: blue;
+    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     height: 230px;
 `;
 function Header() {
@@ -81,7 +67,6 @@ function Header() {
 }
 
 function Timeline({ searchValue, ...propriedades }) {
-    // console.log("Dentro do componente", propriedades.playlists);
     const playlistNames = Object.keys(propriedades.playlists);
     // Statement
     // Retorno por expressão
@@ -89,8 +74,6 @@ function Timeline({ searchValue, ...propriedades }) {
         <StyledTimeline>
             {playlistNames.map((playlistName) => {
                 const videos = propriedades.playlists[playlistName];
-                // console.log(playlistName);
-                // console.log(videos);
                 return (
                     <section key={playlistName}>
                         <h2>{playlistName}</h2>
