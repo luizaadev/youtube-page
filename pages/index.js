@@ -3,9 +3,31 @@ import config from "../config.json";
 import styled from "styled-components";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { videoService } from "../src/services/videoService";
 
 function HomePage() {
+    const service = videoService();
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+    const [playlists, setPlaylists] = React.useState({});    
+
+    React.useEffect(() => {
+        console.log("useEffect");
+        service
+            .getAllVideos()
+            .then((dados) => {
+                console.log(dados.data);
+                const novasPlaylists = {};
+                dados.data.forEach((video) => {
+                    if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
+                    novasPlaylists[video.playlist] = [
+                        video,
+                        ...novasPlaylists[video.playlist],
+                    ];
+                });
+
+                setPlaylists(novasPlaylists);
+            });
+    }, []);
 
     return (
         <>
@@ -14,9 +36,10 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1,
             }}>
+                {/* Prop Drilling */}
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={playlists}>
                     Conteúdo
                 </Timeline>
             </div>
@@ -25,7 +48,6 @@ function HomePage() {
 }
 
 export default HomePage
-
 
 const StyledHeader = styled.div`
     background-color: ${({ theme }) => theme.backgroundLevel1};
@@ -46,7 +68,7 @@ const StyledBanner = styled.div`
     background-color: blue;
     background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
-    height: 230px;    
+    height: 230px;
 `;
 function Header() {
     return (

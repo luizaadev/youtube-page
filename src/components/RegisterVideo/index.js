@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledRegisterVideo } from "./styles";
-
+import { createClient } from "@supabase/supabase-js";
 
 function useForm(propsDoForm) {
     const [values, setValues] = React.useState(propsDoForm.initialValues);
@@ -10,7 +10,7 @@ function useForm(propsDoForm) {
         handleChange: (evento) => {
             console.log(evento.target);
             const value = evento.target.value;
-            const name = evento.target.name;
+            const name = evento.target.name
             setValues({
                 ...values,
                 [name]: value,
@@ -22,19 +22,21 @@ function useForm(propsDoForm) {
     };
 }
 
+const PROJECT_URL = "https://kfomcaozocwkakqauzzu.supabase.co";
+const PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtmb21jYW96b2N3a2FrcWF1enp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgyMTA4MzAsImV4cCI6MTk4Mzc4NjgzMH0.OHogK2_d2p6x7rbvMeGyfJRkoV9aDGZIExmygiy17dQ";
+const supabase = createClient(PROJECT_URL, PUBLIC_KEY);
+
+// pegar a thumbnail do vídeo pela url do youtube
+function getThumbnail(url) {
+    return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`;
+}
+
+
 export default function RegisterVideo() {
     const formCadastro = useForm({
-        initialValues: { titulo: "Título do Vídeo", url: "https://youtube.." }
+        initialValues: { titulo: "Título do vídeo", url: "https://www.youtube.com/..." }
     });
-    const [formVisivel, setFormVisivel] = React.useState(true);
-    /*
-    ## O que precisamos para o form funcionar?
-    - pegar os dados, que precisam vir do state
-        - titulo
-        - url do vídeo 
-    - precisamos ter um onSubmit do nosso form
-    - Limpar o formulário após o Submit
-    */
+    const [formVisivel, setFormVisivel] = React.useState(false);
 
     return (
         <StyledRegisterVideo>
@@ -46,6 +48,20 @@ export default function RegisterVideo() {
                     <form onSubmit={(evento) => {
                         evento.preventDefault();
                         console.log(formCadastro.values);
+                        
+                        // Contrato entre o Front e o backend
+                        supabase.from("video").insert({
+                            title: formCadastro.values.titulo,
+                            url: formCadastro.values.url,
+                            thumb: getThumbnail(formCadastro.values.url),
+                            playlist: "jogos",
+                         })
+                         .then((oqueveio) => {
+                            console.log(oqueveio);
+                         })
+                         .catch((err) => {
+                            console.log(err);
+                         })
 
                         setFormVisivel(false);
                         formCadastro.clearForm();
