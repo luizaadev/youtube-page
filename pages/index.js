@@ -11,18 +11,12 @@ function HomePage() {
     const [playlists, setPlaylists] = React.useState({});    
 
     React.useEffect(() => {
-        console.log("useEffect");
-        service
-            .getAllVideos()
+        service.getAllVideos()
             .then((dados) => {
-                console.log(dados.data);
-                const novasPlaylists = {};
+                const novasPlaylists = {...playlists};
                 dados.data.forEach((video) => {
                     if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
-                    novasPlaylists[video.playlist] = [
-                        video,
-                        ...novasPlaylists[video.playlist],
-                    ];
+                    novasPlaylists[video.playlist].push(video);
                 });
 
                 setPlaylists(novasPlaylists);
@@ -36,10 +30,10 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1,
             }}>
-                {/* Prop Drilling */}
+                {/* Prop drilling =  passar uma props para outro componente que esteja mais em baixo na árvore de componentes */}
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline searchValue={valorDoFiltro} playlists={playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
             </div>
